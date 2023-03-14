@@ -22,3 +22,9 @@ clever env --alias _myself set SYNC_PLEASE_MY_LOVELY_SCRIPT false
 cd $APP_HOME
 
 echo "Sync is started."
+
+# Setup S3
+envsubst < $APP_HOME/s3cfg.dist > $APP_HOME/s3cfg
+
+# List the cellar
+s3cmd -c $APP_HOME/s3cfg ls s3://$BACKUP_BUCKET | sort -r | head -50

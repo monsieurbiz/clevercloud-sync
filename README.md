@@ -29,6 +29,11 @@ Some other environment variables are need for the sync application only (not in 
 
 Running the sync application will create an environment variable named `SYNC_PLEASE_MY_LOVELY_SCRIPT`, this is perfectly normal.
 
+The backup application also has access to those variables through the linked Cellar:
+- `CELLAR_ADDON_HOST`
+- `CELLAR_ADDON_KEY_ID`
+- `CELLAR_ADDON_KEY_SECRET`
+
 ## How to run the sync itself?
 
 You need to copy the `sync-please.sh` script into your own main application.
