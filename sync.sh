@@ -20,3 +20,5 @@ clever link --alias _myself $APP_ID
 clever env --alias _myself set SYNC_PLEASE_MY_LOVELY_SCRIPT false
 
 cd $APP_HOME
+
+echo "Sync is started."
